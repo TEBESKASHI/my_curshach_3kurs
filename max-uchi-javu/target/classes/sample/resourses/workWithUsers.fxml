@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="554.0" prefWidth="671.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client.WorkWithUsersController">
+    <children>
+        <Pane id="" layoutX="0.0" layoutY="0.0" prefHeight="554.0" prefWidth="671.0" style="">
+            <children>
+                <Button id="SignInButton" fx:id="change" layoutX="485.0" layoutY="500.0" mnemonicParsing="false" text="Редактировать" />
+                <Button id="workWithReport" fx:id="back" layoutX="88.0" layoutY="500.0" mnemonicParsing="false" text="Назад" />
+                <Label layoutX="238.0" layoutY="36.0" text="Выберите пользователя">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="table" layoutX="88.0" layoutY="76.0" prefHeight="363.0" prefWidth="519.0">
+                    <columns>
+                        <TableColumn fx:id="name" maxWidth="5000.0" minWidth="10.0" prefWidth="166.0" text="Имя" />
+                        <TableColumn fx:id="lastname" maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="Фамилия" />
+                        <TableColumn fx:id="rolle" maxWidth="5000.0" minWidth="10.0" prefWidth="173.0" text="Роль" />
+                    </columns>
+                </TableView>
+            <Button fx:id="del" layoutX="315.0" layoutY="500.0" mnemonicParsing="false" text="Удалить" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

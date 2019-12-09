@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="613.0" style="" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client.MainController">
+  <children>
+    <Pane id="1" layoutX="0.0" layoutY="0.0" prefHeight="350.0" prefWidth="613.0" style="">
+      <children>
+        <Button fx:id="workWithIncome" layoutX="62.0" layoutY="26.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Работа с доходами" />
+        <Button fx:id="workWithCon" layoutX="62.0" layoutY="88.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Работа с расходами" />
+        <Button fx:id="createPlan" layoutX="63.0" layoutY="214.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Составление плана" />
+        <Button fx:id="workWithReport" layoutX="62.0" layoutY="152.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Получение отчёта" />
+        <Button fx:id="bisnesFunc" layoutX="63.0" layoutY="279.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="163.0" text="Бизнес функции" />
+            <PieChart fx:id="diag" layoutX="259.0" layoutY="43.0" prefHeight="270.0" prefWidth="333.0" title="Анализ доходов и расходов" />
+      </children>
+    </Pane>
+  <Button id="SignInButton" fx:id="exit" layoutX="110.0" layoutY="333.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="63.0" text="Выход" />
+  </children>
+</AnchorPane>

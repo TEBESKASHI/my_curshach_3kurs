@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="639.0" prefWidth="690.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client.NewReportController">
+  <children>
+    <Pane id="1" layoutX="0.0" layoutY="0.0" prefHeight="639.0" prefWidth="704.0" style="">
+      <children>
+        <Button id="workWithReport" fx:id="back" layoutX="75.0" layoutY="592.0" mnemonicParsing="false" text="Назад" />
+        <Label layoutX="313.0" layoutY="14.0" text="Отчёт">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+        <Button fx:id="save" layoutX="482.0" layoutY="592.0" mnemonicParsing="false" text="Сохранить отчёт" />
+        <TableView fx:id="table1" layoutX="14.0" layoutY="111.0" prefHeight="149.0" prefWidth="662.0">
+          <columns>
+            <TableColumn fx:id="data1" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Дата" />
+            <TableColumn fx:id="sum1" maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Сумма" />
+            <TableColumn fx:id="sourse1" maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" text="Источник" />
+            <TableColumn fx:id="name1" maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" text="Имя" />
+            <TableColumn fx:id="lastname1" maxWidth="5000.0" minWidth="10.0" prefWidth="129.0" text="Фамилия" />
+            <TableColumn fx:id="rolle" maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Роль" />
+          </columns>
+        </TableView>
+        <Label layoutX="524.0" layoutY="269.0" text="Итог:" />
+        <TableView fx:id="table2" layoutX="14.0" layoutY="327.0" prefHeight="149.0" prefWidth="662.0">
+          <columns>
+            <TableColumn fx:id="data2" maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Дата" />
+            <TableColumn fx:id="sum2" maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Сумма" />
+            <TableColumn fx:id="sourse2" maxWidth="5000.0" minWidth="10.0" prefWidth="119.0" text="Источник" />
+            <TableColumn fx:id="name2" maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" text="Имя" />
+            <TableColumn fx:id="lastname2" maxWidth="5000.0" minWidth="10.0" prefWidth="129.0" text="Фамилия" />
+            <TableColumn fx:id="rolle2" maxWidth="5000.0" minWidth="10.0" prefWidth="104.0" text="Роль" />
+          </columns>
+        </TableView>
+        <Label layoutX="295.0" layoutY="76.0" text="Доходы семьи" />
+        <Label layoutX="300.0" layoutY="300.0" text="Расходы семьи" />
+        <Label layoutX="525.0" layoutY="491.0" text="Итог:" />
+        <Label fx:id="sumIncome" layoutX="588.0" layoutY="269.0" text="0" />
+        <Label fx:id="sumCon" layoutX="588.0" layoutY="491.0" text="0" />
+        <Label layoutX="218.0" layoutY="526.0" text="Итого за период:" />
+        <Label fx:id="total" layoutX="352.0" layoutY="526.0" text="0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="590.0" style="" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Client.EditCon2Controller">
+    <children>
+        <Pane id="" layoutY="0.0" prefHeight="488.0" prefWidth="585.0" style="">
+            <children>
+                <Button id="SignInButton" fx:id="save" layoutX="423.0" layoutY="428.0" mnemonicParsing="false" text="Сохранить" />
+                <Button id="workWithReport" fx:id="back" layoutX="87.0" layoutY="428.0" mnemonicParsing="false" text="Назад" />
+                <Label layoutX="217.0" layoutY="77.0" text="Редактирование">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="118.0" layoutY="149.0" prefHeight="21.0" prefWidth="67.0" text="Дата" />
+                <Label layoutX="115.0" layoutY="236.0" text="Сумма" />
+                <Label layoutX="107.0" layoutY="312.0" text="Источник" />
+                <TextField fx:id="dataField" layoutX="212.0" layoutY="147.0" prefHeight="25.0" prefWidth="232.0" />
+                <TextField fx:id="sumField" layoutX="212.0" layoutY="232.0" prefHeight="25.0" prefWidth="232.0" />
+                <TextField fx:id="sourseField" layoutX="212.0" layoutY="308.0" prefHeight="25.0" prefWidth="232.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
